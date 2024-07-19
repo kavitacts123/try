@@ -149,11 +149,12 @@ span {
     height: 250px;
     object-fit: cover;
 }
-.services .center{
+
+.services .center {
     position: relative;
 }
 
-.services .center:before{
+.services .center:before {
     content: '';
     position: absolute;
     left: -10px;
@@ -301,6 +302,7 @@ button.owl-prev {
     height: 2px;
     background: #208678;
 }
+
 span {
     background: none;
 }
@@ -501,49 +503,63 @@ span {
         font-weight: bold;
         font-size: 45px;
     }
+
     .grid .card-text {
         font-size: 18px;
     }
+
     .grid_text {
         padding: 10px 22px;
     }
+
     .grid .card_img {
         padding: 30px 42px;
     }
+
     .work .card-body h2 {
         font-size: 42px;
         font-weight: bold;
     }
+
     .services h2 {
         font-size: 42px;
     }
+
     h2 {
         font-size: 42px;
     }
+
     .designed .des_text {
         height: 280px;
         margin-bottom: 20px;
     }
+
     .project h2 {
         font-size: 42px;
     }
+
     .test_text {
         margin-top: 0;
     }
+
     .tm-item p {
         font-size: 18px;
     }
+
     .subscribe .sub_text p {
         font-size: 18px;
     }
+
     .testimonial .card-body h2 {
         margin-bottom: 20px;
     }
+
     .subtitle .title:before {
         left: 0;
         width: 50px;
     }
-    .card{
+
+    .card {
         padding-left: 0;
     }
 }
@@ -553,44 +569,51 @@ span {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     .grid {
         padding-top: 100px;
     }
-    
+
     .grid_serv {
         margin-bottom: 20px;
     }
-    
+
     .grid .card_img {
         /* width: 100%; */
         max-width: 100%;
     }
+
     .designed .des_text {
         height: 310px;
     }
+
     .designed .des_text p {
         font-size: 18px;
     }
+
     .date {
         margin-top: 10px;
         font-size: 18px;
     }
+
     .law-unit {
         padding-left: 23px;
         font-size: 17px;
     }
+
     .law-unit:before {
         width: 20px;
     }
+
     .project_item[_ngcontent-ng-c1517086803] h4[_ngcontent-ng-c1517086803] {
         font-size: 20px;
         line-height: 0;
         text-align: left;
         margin-bottom: 15px;
     }
-    
 
-    
+
+
 }
 
 @media only screen and (max-width: 767px) {}
@@ -599,33 +622,43 @@ span {
     .grid_text {
         padding: 5px 14px;
     }
+
     .grid .card-title {
         font-size: 36px;
     }
+
     .grid .card-text {
         font-size: 15px;
     }
+
     .grid_text p {
         font-size: 12px;
     }
+
     .grid .card_img {
         padding: 0;
     }
+
     .card {
-         padding-left: 0;
+        padding-left: 0;
     }
+
     .work .card-body h2 {
         font-size: 35px;
     }
+
     .services h2 {
         font-size: 35px;
     }
+
     h2 {
         font-size: 35px;
     }
+
     .designed .des_text {
         height: 275px;
     }
+
     .project h2 {
         font-size: 35px;
     }
@@ -633,21 +666,26 @@ span {
     .testimonial .card-body h2 {
         font-size: 35px;
     }
+
     .subscribe .sub_text h2 {
         font-size: 35px;
     }
+
     .card-body h3 {
         font-size: 25px;
     }
+
     .subtitle .title:before {
         left: 0;
         top: 12%;
         width: 35px;
     }
+
     .project_item h4 {
         font-size: 21px;
         line-height: 15px;
     }
+
     .testimonial .card h3 {
         padding-left: 40px;
     }
