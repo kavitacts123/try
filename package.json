@@ -9,8 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:granny_home": "node dist/granny_home/server/server.mjs",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "ng build --configuration production",
+    "deploy": "gh-pages -d dist/granny_home"
   },
   "private": true,
   "dependencies": {
