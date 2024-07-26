@@ -65,13 +65,18 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                "maximumWarning": "2.5mb",
+                "maximumError": "5mb"
+                },
+                {
+                  "type": "any",
+                  "maximumError": "2mb",
+                  "maximumWarning": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumError": "2mb",
-                  "maximumWarning": "1.5mb"
+                    "maximumWarning": "1mb",
+                "maximumError": "2mb"
                 }
               ],
               "outputHashing": "all"
@@ -132,9 +137,6 @@
               "node_modules/owl.carousel/dist/owl.carousel.min.js"
             ]
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

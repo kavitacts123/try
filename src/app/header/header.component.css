@@ -80,13 +80,13 @@ a.nav-link {
 @media only screen and (min-width: 1441px) {}
 
 @media only screen and (max-width: 1199px) {
-    .navbar-brand[_ngcontent-ng-c1187028217] img[_ngcontent-ng-c1187028217] {
+    .navbar-brand img {
         height: 23px;
     }
-    .nav-item[_ngcontent-ng-c1187028217] {
+    .nav-item {
         padding-right: 0px;
     }
-    .btn[_ngcontent-ng-c1187028217] {
+    .btn {
         padding: 5px 20px;
     }
     .navbar-toggler:focus {
@@ -94,7 +94,7 @@ a.nav-link {
         outline: 0;
         box-shadow: none;
     }
-    /* a.nav-link[_ngcontent-ng-c1187028217] {
+    /* a.nav-link {
         color: black;
         position: relative;
         background-color: white;
@@ -104,13 +104,13 @@ a.nav-link {
 }
 
 @media only screen and (max-width: 991px) {
-    .navbar[_ngcontent-ng-c1187028217] {
+    .navbar {
         height: 65px;
     }
-    .navbar-brand[_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217] img[_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217] {
+    .navbar-brand img {
         height: 21px;
     }
-    .navbar-brand[_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217] img[_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217] {
+    .navbar-brand img {
         height: 16px;
     }
     [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
@@ -118,28 +118,28 @@ a.nav-link {
         font-size: 13px;
         border: none;
     }
-    .navbar[_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217] {
+    .navbar {
         height: 60px;
     }
-    .navbar-nav[_ngcontent-ng-c1187028217] {
+    .navbar-nav {
         flex-direction: row;
         background-color: white;
         margin-top: 26px;
         padding: 20px;
         justify-content: space-between;
     }
-    /* a.nav-link[_ngcontent-ng-c1187028217] {
+    /* a.nav-link {
         padding-right: 43px;*/
 }
 
 @media only screen and (max-width: 767px) {}
 
 @media only screen and (max-width: 575px) {
-    .navbar-nav[_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217] {
+    .navbar-nav {
         justify-content: space-between;
         font-size: 12px;
     }
-    .btn[_ngcontent-ng-c1187028217][_ngcontent-ng-c1187028217] {
+    .btn {
         padding: 5px 12px;
     }
 }

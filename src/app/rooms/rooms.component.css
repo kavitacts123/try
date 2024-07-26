@@ -1,0 +1,138 @@
+/* room-selection.component.css */
+.date{
+    margin-top: 100px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .room {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .room h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 4px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  button.btn.btn-success {
+    padding: 4px 20px;
+    
+  }
+  button.btn.btn-primary {
+    padding: 4px 20px;
+    
+  }
+  
+  .submit {
+    display: flex;
+    margin-top: 20px;
+  }
+  .right_btn{
+    margin-left: auto;
+  }
+  
+  /* You can add global styles to this file, and also import other style files */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 35px;
+}
+h3{
+  font-size: 28px;
+}
+h4{
+  font-size: 23px;
+  font-weight: 800;
+}
+h5{
+  font-size: 20px;
+}
+p{
+  font-size: 16px;
+}
+label{
+  font-size: 16px;
+}
+.btn {
+  font-size: 18px;
+}
+
+
+
+
+@media only screen and (max-width: 991px){
+  .date {
+    width: 80%;
+  }
+  }
+  
+  @media only screen and (max-width: 991px){
+  .date {
+    width: 100%;
+  }
+  }
