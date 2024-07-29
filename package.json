@@ -10,7 +10,7 @@
     "test": "ng test",
     "serve:ssr:granny_home": "node dist/granny_home/server/server.mjs",
     "predeploy": "ng build --configuration production",
-    "deploy": "gh-pages -d dist/angular_granny"
+    "deploy": "gh-pages -d dist/granny_home"
   },
   "private": true,
   "dependencies": {
