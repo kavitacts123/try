@@ -1,0 +1,16 @@
+{
+  "routes": [
+    "/about",
+    "/blog",
+    "/booking-form",
+    "/contact",
+    "/form2",
+    "/form2/date",
+    "/form2/destination",
+    "/form2/hotel_list",
+    "/form2/payment",
+    "/form2/peoples",
+    "/form2/rooms",
+    "/home"
+  ]
+}
