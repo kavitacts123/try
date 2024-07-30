@@ -1,0 +1,42 @@
+<section class="date">
+  <div class="container">
+    <h4>Select Date</h4>
+
+    <form #dateForm="ngForm" (ngSubmit)="submitForm(dateForm)">
+      <div class="form-group">
+        <label for="checkinDate">Check-in Date:</label>
+        <input id="checkinDate" name="checkinDate" class="form-control" placeholder="Select check-in date"
+               [(ngModel)]="checkinDate" ngbDatepicker #d="ngbDatepicker" required>
+        <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+        <div *ngIf="dateForm.controls['checkinDate']?.invalid && (dateForm.controls['checkinDate']?.dirty || dateForm.controls['checkinDate']?.touched)"
+             class="alert alert-danger">
+          Check-in date is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="checkoutDate">Check-out Date:</label>
+        <input id="checkoutDate" name="checkoutDate" class="form-control" placeholder="Select check-out date"
+               [(ngModel)]="checkoutDate" ngbDatepicker #d2="ngbDatepicker" required>
+        <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+        <div *ngIf="dateForm.controls['checkoutDate']?.invalid && (dateForm.controls['checkoutDate']?.dirty || dateForm.controls['checkoutDate']?.touched)"
+             class="alert alert-danger">
+          Check-out date is required.
+        </div>
+        <div *ngIf="dateForm.errors?.['dateRangeInvalid'] && (dateForm.dirty || dateForm.touched)"
+             class="alert alert-danger">
+          Check-out date must be after check-in date.
+        </div>
+      </div>
+
+      <div class="submit">
+        <div class="left_btn">
+          <button class="btn btn-primary" color="primary" routerLink="/form2/hotel_list">Prev</button>
+        </div>
+        <div class="right_btn">
+          <button class="btn btn-success" [disabled]="dateForm.invalid" type="submit">Next</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

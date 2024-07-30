@@ -1,0 +1,70 @@
+<section class="peoples">
+  <div class="person-form">
+    <h4>Add Guest</h4>
+    <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+      <div formArrayName="persons">
+        <div *ngFor="let person of personsArray.controls; let i = index" [formGroupName]="i">
+
+          <!-- Person Details -->
+          <div class="person_sec">
+            <div class="row">
+
+              <div class="col-md-8">
+                <div class="addperson">
+                  <label for="firstName{{i}}">First Name:</label>
+                  <input type="text" id="firstName{{i}}" formControlName="firstName" class="form-control">
+                  <div *ngIf="person.get('firstName')?.invalid && (person.get('firstName')?.dirty || person.get('firstName')?.touched)" class="text-danger">
+                    First Name is required.
+                  </div>
+
+                  <label for="lastName{{i}}">Last Name:</label>
+                  <input type="text" id="lastName{{i}}" formControlName="lastName" class="form-control">
+                  <div *ngIf="person.get('lastName')?.invalid && (person.get('lastName')?.dirty || person.get('lastName')?.touched)" class="text-danger">
+                    Last Name is required.
+                  </div>
+
+                  <label for="age{{i}}">Age:</label>
+                  <input type="number" id="age{{i}}" formControlName="age" class="form-control" placeholder="Enter Age">
+                  <div *ngIf="person.get('age')?.invalid && (person.get('age')?.dirty || person.get('age')?.touched)" class="text-danger">
+                    Age is required and must be a positive number.
+                  </div>
+
+                  <label for="document{{i}}">Upload Document:</label>
+                  <input type="file" id="document{{i}}" formControlName="document" class="form-control-file">
+                  <div *ngIf="person.get('document')?.invalid && (person.get('document')?.dirty || person.get('document')?.touched)" class="text-danger">
+                    Document is required.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Remove Person Button -->
+              <div class="col-md-4">
+                <div class="button1">
+                  <div class="btn_clear">
+                    <button class="btn btn-secondary" type="button" (click)="removePerson(i)">Clear</button>
+                  </div>
+                  <!-- Add Person Button -->
+                  <div class="btn_remove">
+                    <button class="btn btn-success" color="primary" type="button" (click)="addPerson()">+ Add</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="submit">
+        <div class="left_btn">
+          <button class="btn btn-primary" routerLink="/form2/date">Prev</button>
+        </div>
+        <div class="right_btn">
+          <button class="btn btn-success" [disabled]="personForm.invalid" type="submit">Next</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

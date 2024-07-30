@@ -1,0 +1,120 @@
+/* hotel-list.component.css */
+.list {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .hotel-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hotel-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  button.btn.btn-success {
+    padding: 4px 20px;
+  
+  }
+  
+  button.btn.btn-primary {
+    padding: 4px 20px;
+  
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .submit {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .right_btn {
+    margin-left: auto;
+  }
+  
+  i.fa-solid.fa-star {
+    color: orange;
+    font-size: 15px;
+  }
+  .hotel-sec{
+    display: flex;
+  }
+  .booking-btn{
+    margin-left: auto;
+  }
+  .booking-btn button.btn.btn-success{
+    margin-top: 15px;
+    padding: 6px 20px;
+  }
+  .rating{
+    display: flex;
+  }
+  p{
+    margin-right: 10px;
+  }
+  
+  /* You can add global styles to this file, and also import other style files */
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 35px;
+  }
+  h3{
+    font-size: 28px;
+  }
+  h4{
+    font-size: 23px;
+    font-weight: 800;
+  }
+  h5{
+    font-size: 20px;
+  }
+  p{
+    font-size: 16px;
+  }
+  label{
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  
+  
+  
+  @media only screen and (max-width: 991px){
+    .list {
+      width: 80%;
+    }
+    }
+    
+    @media only screen and (max-width: 575px){
+    .list {
+      width: 100%;
+    }
+    .container {
+      max-width: 371px;
+  }
+    }

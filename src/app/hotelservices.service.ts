@@ -1,23 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class HotelservicesService {
-  private hotels = [
-    { id: 1, name: 'Aether Haven' },
-    { id: 2, name: 'Palm Paradise' },
-    { id: 3, name: 'Blissful Haven' },
-    { id: 4, name: 'Blissful Retreat' },
-    // Add more hotels as needed
-  ];
+export class HeaderservicesService {
+  private showNavbarSubject = new BehaviorSubject<boolean>(true);
+  showNavbar$ = this.showNavbarSubject.asObservable();
 
-  constructor() { }
+  hideNavbar(): void {
+    this.showNavbarSubject.next(false);
+  }
 
-  getHotels(): Observable<any[]> {
-    // Simulate fetching hotels from an API or other data source
-    return of(this.hotels);
+  showNavbar(): void {
+    this.showNavbarSubject.next(true);
   }
 }

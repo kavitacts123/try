@@ -4,13 +4,13 @@
     "/blog",
     "/booking-form",
     "/contact",
-    "/date",
-    "/destination",
     "/form2",
-    "/home",
-    "/hotel_list",
-    "/payment",
-    "/peoples",
-    "/rooms"
+    "/form2/date",
+    "/form2/destination",
+    "/form2/hotel_list",
+    "/form2/payment",
+    "/form2/peoples",
+    "/form2/rooms",
+    "/home"
   ]
 }

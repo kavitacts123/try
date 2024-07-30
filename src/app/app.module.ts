@@ -28,13 +28,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { Form2Component } from './form2/form2.component';
 import { BookingFormComponent } from './booking-form/booking-form.component';
-import { DestinationComponent } from './destination/destination.component';
-import { DateComponent } from './date/date.component';
-import { PeoplesComponent } from './peoples/peoples.component';
-import { RoomsComponent } from './rooms/rooms.component';
-import { HotelListComponent } from './hotel-list/hotel-list.component';
-import { PaymentComponent } from './payment/payment.component';
+import { DestinationComponent } from './form2/destination/destination.component';
+import { DateComponent } from './form2/date/date.component';
+import { PeoplesComponent } from './form2/peoples/peoples.component';
+import { RoomsComponent } from './form2/rooms/rooms.component';
+import { HotelListComponent } from './form2/hotel-list/hotel-list.component';
+import { PaymentComponent } from './form2/payment/payment.component';
 import { HomeComponent } from './home/home.component';
+import { Destination1Component } from './form2/destination1/destination1.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { HomeComponent } from './home/home.component';
     HotelListComponent,
     PaymentComponent,
     HomeComponent,
+    Destination1Component,
   ],
   imports: [
     BrowserModule,
