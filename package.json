@@ -1,6 +1,6 @@
 {
-  "homepage": "https://kavitacts123.github.io/Project55",
-  "name": "Project55",
+  "homepage": "https://kavitacts123.github.io/try/",
+  "name": "granny_home",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,8 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:granny_home": "node dist/granny_home/server/server.mjs",
-    "predeploy": "ng build --configuration production",
-    "deploy": "gh-pages -d docs"
+    "predeploy": "ng build --configuration production --base-href /try/",
+    "deploy": "gh-pages -d dist/granny_home/"
   },
   "private": true,
   "dependencies": {
